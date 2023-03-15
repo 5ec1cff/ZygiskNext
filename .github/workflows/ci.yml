@@ -71,11 +71,11 @@ jobs:
       - name: Upload release
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ steps.prepareArtifact.outputs.riruReleaseName }}
+          name: ${{ steps.prepareArtifact.outputs.releaseName }}
           path: "./zksu-release/*"
 
       - name: Upload debug
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ steps.prepareArtifact.outputs.riruDebugName }}
+          name: ${{ steps.prepareArtifact.outputs.debugName }}
           path: "./zksu-debug/*"
